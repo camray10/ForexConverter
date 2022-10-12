@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+    <h1>Currensy Converter</h1>
+    <form action="/results" method="POST">
+        <div class="ConvertFrom">
+        <input type="name" placeholder="Converting From" name="convertFrom">
+        </div>
+
+        <div class="ConvertTo">
+        <input type="name" placeholder="Converting To" name="convertTo">
+        </div>
+
+        <div class="amount">
+        <input type="number" placeholder="Enter Amount" name="amount">
+        </div>
+
+        <div class="Button"></div>
+        <button>Submit Conversion</button>
+    </form>
+    
+{% endblock %}
